@@ -29,11 +29,12 @@ Before getting started, ensure you have the following installed:
    First, clone the repository to your local machine using Git:
    
    ```bash
-   git clone https://github.com/Nageshwar-Bedge/e-commerce-product-list.git
+   git clone https://github.com/Nageshwar-Bedge/QED42_Assignment.git
+   
 2. Navigate to the project folder: Open the terminal and navigate to the project directory:
 
    ```bash
-   cd e-commerce-product-list
+   cd QED42_Assignment
 
 3. Install dependencies: Run the following command to install the necessary dependencies for the React project:
    
