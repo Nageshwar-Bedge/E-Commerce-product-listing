@@ -1,0 +1,299 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f4f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+.header {
+  background-color: #2d3e50;
+  color: white;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 1.8rem;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.header nav a:hover {
+  background-color: #f28c28;
+}
+
+/* Search & Filter Section */
+.search-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.search-filter input,
+.search-filter select {
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+  width: 20%;
+  background-color: #fafafa;
+  font-weight: 500;
+}
+
+.search-filter input:focus,
+.search-filter select:focus {
+  border-color: #ff6a00;
+  outline: none;
+}
+
+.search-filter button {
+  background-color: #ff6a00;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  font-size: 1.1rem;
+}
+
+.search-filter button:hover {
+  background-color: #f28c28;
+}
+
+/* Product List */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 cards horizontally */
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Product Card */
+.product-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: none; /* Removed 3D effect */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  border: 2px solid #f1f1f1; /* Border added to card */
+  background-color: #f9f9f9;
+  height: 100%; /* Ensuring the card stretches to fill the container */
+}
+
+.product-card:hover {
+  background-color: #fff;
+  border-color: #ff6a00; /* Border color on hover */
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 180px;
+  height: auto; /* Ensures proportional image scaling */
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #eee; /* Border around image */
+  transition: transform 0.3s ease;
+  margin-bottom: 1.5rem; /* Ensuring proper spacing between image and title */
+}
+
+.product-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.product-card h3:hover {
+  color: #ff6a00;
+}
+
+.product-card p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0.5rem 0 1rem 0; /* Adjusted margin to align with other elements */
+  transition: color 0.3s ease;
+}
+
+.product-card p:hover {
+  color: #333;
+}
+
+.product-card button {
+  background-color: #ff6a00;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: auto; /* Pushes button to the bottom of the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #f28c28;
+}
+
+/* Adding a badge for product category */
+.product-card .badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff6a00;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: #2d3e50;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+
+/* Tablet and Small Screens (Max Width: 1024px) */
+@media (max-width: 1024px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);  /* 3 cards horizontally */
+  }
+
+  .search-filter input,
+  .search-filter select {
+    width: 30%; /* Slightly larger width for inputs on tablets */
+  }
+}
+
+/* Medium Screens (Max Width: 768px) */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header nav a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .search-filter input,
+  .search-filter select {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Flexible columns */
+  }
+
+  .product-card {
+    padding: 1rem; /* Reduced padding for smaller screens */
+  }
+}
+
+/* Mobile Devices (Max Width: 480px) */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.3rem; /* Smaller header font for small phones */
+  }
+
+  .header nav a {
+    font-size: 0.8rem; /* Smaller navigation font on phones */
+    padding: 0.5rem 1rem;
+  }
+
+  .search-filter input,
+  .search-filter select {
+    width: 100%; /* Full width for better mobile experience */
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* More compact layout on very small devices */
+  }
+
+  .product-card {
+    padding: 1rem; /* Smaller padding for mobile view */
+  }
+
+  .footer {
+    font-size: 0.8rem; /* Smaller footer text on mobile */
+  }
+}
+
+/* Extra Small Devices (Max Width: 320px) */
+@media (max-width: 320px) {
+  .product-list {
+    grid-template-columns: 1fr; /* Stacks product cards vertically on tiny screens */
+  }
+
+  .product-card {
+    padding: 0.8rem; /* Reduced padding for very small screens */
+  }
+
+  .header h1 {
+    font-size: 1.2rem; /* Smaller header font for very small screens */
+  }
+
+  .header nav a {
+    font-size: 0.7rem; /* Smaller font for very small screens */
+  }
+}
