@@ -32,19 +32,19 @@ Before getting started, ensure you have the following installed:
    git clone https://github.com/Nageshwar-Bedge/e-commerce-product-list.git
 2. Navigate to the project folder: Open the terminal and navigate to the project directory:
 
-bash
-cd e-commerce-product-list
+   ```bash
+   cd e-commerce-product-list
 
 3. Install dependencies: Run the following command to install the necessary dependencies for the React project:
    
-bash
-npm install
+   ```bash
+   npm install
 This command will install all the packages listed in package.json and set up the development environment.
 
 4. Run the project: Once the dependencies are installed, you can run the React app locally with the following command:
 
-bash
-npm start
+   ```bash
+   npm start
 This will start the development server and automatically open the application in your default browser. If it doesn't open automatically, you can manually go to http://localhost:3000.
 
 5. Explore the features:
