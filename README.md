@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# E-Commerce Product List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an e-commerce product listing application built with **React.js**, **HTML**, **CSS**, and **JavaScript**, **API**. The project displays a list of products with their images, descriptions, prices, and an "Add to Cart" button. The project also has a responsive design to ensure a seamless user experience across various devices.
 
-## Available Scripts
+## Features Implemented
 
-In the project directory, you can run:
+- **Product Cards**: Displays products in a grid format with product details.
+- **Add to Cart Button**: Simulates adding products to a shopping cart.
+- **Search & Filter**: Basic functionality for searching or filtering products.
+- **Responsive Design**: The application adapts to different screen sizes (mobile, tablet, desktop).
+- **State Management**: Uses React's state management for handling product lists and cart items.
 
-### `npm start`
+## Setup Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Follow the steps below to set up the project locally on your machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Before getting started, ensure you have the following installed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org/) (v12 or higher) installed on your machine to run React apps.
+- [npm](https://www.npmjs.com/) (Node Package Manager) which comes with Node.js to manage dependencies.
+- A code editor like [Visual Studio Code](https://code.visualstudio.com/).
+- A browser (Google Chrome, Firefox, etc.) to view the project.
 
-### `npm run build`
+### Steps to Run the Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
+   First, clone the repository to your local machine using Git:
+   
+   ```bash
+   git clone https://github.com/Nageshwar-Bedge/QED42_Assignment.git
+   
+2. Navigate to the project folder: Open the terminal and navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   cd QED42_Assignment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies: Run the following command to install the necessary dependencies for the React project:
+   
+   ```bash
+   npm install
+This command will install all the packages listed in package.json and set up the development environment.
 
-### `npm run eject`
+4. Run the project: Once the dependencies are installed, you can run the React app locally with the following command:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm start
+This will start the development server and automatically open the application in your default browser. If it doesn't open automatically, you can manually go to http://localhost:3000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Explore the features:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Browse through the product cards.
+Use the "Add to Cart" button to simulate adding products to the cart.
+The application is responsive and will adapt to mobile, tablet, and desktop screen sizes.
