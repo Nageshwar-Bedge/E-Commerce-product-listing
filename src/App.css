@@ -88,22 +88,21 @@ body {
   background-color: #f28c28;
 }
 
-/* Product List */
+
 .product-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);  /* 4 cards horizontally */
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   padding: 2rem;
   max-width: 100%;
   margin: 0 auto;
 }
 
-/* Product Card */
 .product-card {
   background-color: #ffffff;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: none; /* Removed 3D effect */
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -111,25 +110,25 @@ body {
   padding: 1.5rem;
   text-align: center;
   position: relative;
-  border: 2px solid #f1f1f1; /* Border added to card */
+  border: 2px solid #f1f1f1;
   background-color: #f9f9f9;
-  height: 100%; /* Ensuring the card stretches to fill the container */
+  height: 100%;
 }
 
 .product-card:hover {
   background-color: #fff;
-  border-color: #ff6a00; /* Border color on hover */
+  border-color: #ff6a00;
 }
 
 .product-card img {
   width: 100%;
   max-height: 180px;
-  height: auto; /* Ensures proportional image scaling */
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
-  border: 2px solid #eee; /* Border around image */
+  border: 2px solid #eee;
   transition: transform 0.3s ease;
-  margin-bottom: 1.5rem; /* Ensuring proper spacing between image and title */
+  margin-bottom: 1.5rem;
 }
 
 .product-card h3 {
@@ -147,7 +146,7 @@ body {
 .product-card p {
   color: #666;
   font-size: 1.1rem;
-  margin: 0.5rem 0 1rem 0; /* Adjusted margin to align with other elements */
+  margin: 0.5rem 0 1rem 0;
   transition: color 0.3s ease;
 }
 
@@ -163,7 +162,7 @@ body {
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
-  margin-top: auto; /* Pushes button to the bottom of the card */
+  margin-top: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 1rem;
   width: 100%;
@@ -174,7 +173,6 @@ body {
   background-color: #f28c28;
 }
 
-/* Adding a badge for product category */
 .product-card .badge {
   position: absolute;
   top: 10px;
@@ -187,7 +185,6 @@ body {
   font-weight: bold;
 }
 
-/* Footer */
 .footer {
   background-color: #2d3e50;
   color: white;
@@ -197,21 +194,17 @@ body {
   font-size: 0.9rem;
 }
 
-/* Responsive Design */
-
-/* Tablet and Small Screens (Max Width: 1024px) */
 @media (max-width: 1024px) {
   .product-list {
-    grid-template-columns: repeat(3, 1fr);  /* 3 cards horizontally */
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .search-filter input,
   .search-filter select {
-    width: 30%; /* Slightly larger width for inputs on tablets */
+    width: 30%;
   }
 }
 
-/* Medium Screens (Max Width: 768px) */
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 2.2rem;
@@ -238,58 +231,57 @@ body {
   }
 
   .product-list {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Flexible columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .product-card {
-    padding: 1rem; /* Reduced padding for smaller screens */
+    padding: 1rem;
   }
 }
 
-/* Mobile Devices (Max Width: 480px) */
+
 @media (max-width: 480px) {
   .header h1 {
-    font-size: 1.3rem; /* Smaller header font for small phones */
+    font-size: 1.3rem;
   }
 
   .header nav a {
-    font-size: 0.8rem; /* Smaller navigation font on phones */
+    font-size: 0.8rem;
     padding: 0.5rem 1rem;
   }
 
   .search-filter input,
   .search-filter select {
-    width: 100%; /* Full width for better mobile experience */
+    width: 100%;
   }
 
   .product-list {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* More compact layout on very small devices */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .product-card {
-    padding: 1rem; /* Smaller padding for mobile view */
+    padding: 1rem;
   }
 
   .footer {
-    font-size: 0.8rem; /* Smaller footer text on mobile */
+    font-size: 0.8rem;
   }
 }
 
-/* Extra Small Devices (Max Width: 320px) */
 @media (max-width: 320px) {
   .product-list {
-    grid-template-columns: 1fr; /* Stacks product cards vertically on tiny screens */
+    grid-template-columns: 1fr;
   }
 
   .product-card {
-    padding: 0.8rem; /* Reduced padding for very small screens */
+    padding: 0.8rem;
   }
 
   .header h1 {
-    font-size: 1.2rem; /* Smaller header font for very small screens */
+    font-size: 1.2rem;
   }
 
   .header nav a {
-    font-size: 0.7rem; /* Smaller font for very small screens */
+    font-size: 0.7rem;
   }
 }
