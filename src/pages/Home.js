@@ -1,4 +1,3 @@
-// Home.js
 import React, { useState, useEffect } from "react";
 import { fetchProducts } from "../api";
 import ProductCard from "../components/ProductCard";
@@ -13,7 +12,6 @@ const Home = ({ addToCart }) => {
     fetchProducts().then(setProducts);
   }, []);
 
-  // Filter products based on search, category, and sorting
   const filteredProducts = products
     .filter((product) =>
       product.title.toLowerCase().includes(search.toLowerCase())
@@ -28,7 +26,6 @@ const Home = ({ addToCart }) => {
       return 0;
     });
 
-  // Get unique categories from products data
   const categories = [ 
     "fragrances", 
     "furniture", 
@@ -39,8 +36,7 @@ const Home = ({ addToCart }) => {
     "appliances",
     "accessories"
     
-  ];  // Add all the categories you have in the data
-
+  ];
   return (
     <div>
       <div className="search-filter">
