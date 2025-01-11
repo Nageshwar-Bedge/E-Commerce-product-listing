@@ -1,3 +1,4 @@
+//src/page/CartPage.js
 import React from "react";
 
 const CartPage = ({ cart, updateCart }) => {
