@@ -14,11 +14,11 @@ const Header = ({ cartCount }) => {
       <h1>
         <FaShoppingCart className="header-icon" /> E-Commerce
       </h1>
-      {/* Menu toggle button */}
+      {/* Menu Toggle Button */}
       <button className="menu-toggle" onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </button>
-      {/* Navigation links */}
+      {/* Navigation Links */}
       <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setMenuOpen(false)}>
           <FaHome className="nav-icon" /> Home

@@ -535,6 +535,7 @@ button:disabled:hover {
 
 /* Header Styling */
 /* Base Styles */
+/* Base Styles */
 .header {
   display: flex;
   justify-content: space-between;
@@ -615,9 +616,6 @@ button:disabled:hover {
     display: none;
   }
 }
-
-
-
 
 .header nav {
   display: flex;
