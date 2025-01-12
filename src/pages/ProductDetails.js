@@ -23,7 +23,7 @@ const ProductDetails = () => {
         <p className="product-description">{product.description}</p>
         <div className="product-price-rating">
           <p className="product-price">
-            <strong>Price:</strong> ${product.price}
+            <strong>Price:</strong> ₹{product.price}
           </p>
           <p className="product-rating">
             <strong>Rating:</strong> {product.rating} / 5

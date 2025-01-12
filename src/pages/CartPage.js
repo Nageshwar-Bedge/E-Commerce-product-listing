@@ -22,7 +22,7 @@ const CartPage = ({ cart, updateCart }) => {
             <div key={product.id} className="cart-item">
               <div className="cart-item-details">
                 <h3 className="cart-item-title">{product.title}</h3>
-                <p className="cart-item-price">Price: {product.price.toFixed(2)}</p>
+                <p className="cart-item-price">Price: ₹{product.price.toFixed(2)}</p>
                 <div className="cart-item-actions">
                   <label htmlFor={`quantity-${product.id}`}>Quantity:</label>
                   <input
@@ -45,7 +45,7 @@ const CartPage = ({ cart, updateCart }) => {
       {!isCartEmpty && (
         <div className="cart-summary">
           <h2>Total Price:</h2>
-          <p className="total-price">{totalPrice.toFixed(2)}</p>
+          <p className="total-price">₹{totalPrice.toFixed(2)}</p>
           <button className="checkout-btn">Proceed to Checkout</button>
         </div>
       )}
