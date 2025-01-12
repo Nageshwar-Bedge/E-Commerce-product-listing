@@ -535,7 +535,6 @@ button:disabled:hover {
 
 /* Header Styling */
 /* Base Styles */
-/* Base Styles */
 .header {
   display: flex;
   justify-content: space-between;
@@ -543,6 +542,7 @@ button:disabled:hover {
   padding: 1rem 2rem;
   background: #2d3e50;
   color: white;
+  position: relative;  /* Ensure elements inside are stacked properly */
 }
 
 .header h1 {
@@ -567,23 +567,25 @@ button:disabled:hover {
 }
 
 .nav-links a:hover {
-  color: #ff6f61;
+  color: #0c0b0b;
 }
 
 /* Menu Toggle Button Visible on Small Screens */
 .menu-toggle {
-  display: none;
+  display: none; /* Hide by default */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer; /* Ensure the cursor is pointer to show it's clickable */
+  z-index: 10; /* Make sure the button is above other elements */
 }
 
-/* Responsive Styles */
+/* Responsive Styles for Small Screens */
 @media screen and (max-width: 768px) {
   /* Display the toggle button on small screens */
   .menu-toggle {
     display: block;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
   }
 
   /* Initially hide the nav items on small screens */
@@ -596,7 +598,7 @@ button:disabled:hover {
     width: 100%;
     background: #2d3e50;
     padding: 1rem;
-    z-index: 100;
+    z-index: 5; /* Ensure the nav is under the toggle button */
   }
 
   /* Show the nav items when the menu is open */
@@ -605,6 +607,7 @@ button:disabled:hover {
   }
 }
 
+/* Responsive Styles for Larger Screens */
 @media screen and (min-width: 769px) {
   /* Show the navigation links on larger screens */
   .nav-links {

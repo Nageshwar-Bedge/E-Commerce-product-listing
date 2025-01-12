@@ -5,8 +5,9 @@ import { FaHome, FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 const Header = ({ cartCount }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Toggle the menu state
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen(!menuOpen); // This toggles the menu visibility
   };
 
   return (
@@ -14,10 +15,12 @@ const Header = ({ cartCount }) => {
       <h1>
         <FaShoppingCart className="header-icon" /> E-Commerce
       </h1>
+
       {/* Menu Toggle Button */}
       <button className="menu-toggle" onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </button>
+
       {/* Navigation Links */}
       <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
         <Link to="/" onClick={() => setMenuOpen(false)}>
