@@ -46,14 +46,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 3rem;
+  padding: 0.6rem;
   background-color: #ffffff;
-  margin-top: 1.5rem;
+  margin-top: 0.6rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 1200px;
-  margin: 1.5rem auto;
+  margin: 0.8rem auto;
 }
 
 .search-filter input,
@@ -62,7 +62,7 @@ body {
   border-radius: 5px;
   border: 1px solid #ccc;
   font-size: 1.1rem;
-  width: 18%;
+  width: 50%;
   background-color: #fafafa;
   font-weight: 500;
 }
@@ -91,8 +91,8 @@ body {
 .product-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  padding: 2rem;
+  gap: 1.3rem;
+  padding: 1.3rem;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -576,3 +576,9 @@ button:disabled:hover {
   font-size: 1.5rem; /* Increased icon size */
   margin-right: 0.5rem; /* Adjust space between icon and text */
 }
+
+
+
+
+
+
