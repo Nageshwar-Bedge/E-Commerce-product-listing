@@ -69,12 +69,12 @@ body {
 
 .search-filter input:focus,
 .search-filter select:focus {
-  border-color: #ff6a00;
+  border-color: #0c0d0d;
   outline: none;
 }
 
 .search-filter button {
-  background-color: #ff6a00;
+  background-color: #28c3f2;
   color: white;
   padding: 1rem 2.5rem;
   border-radius: 5px;
