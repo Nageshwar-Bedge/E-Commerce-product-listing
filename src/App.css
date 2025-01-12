@@ -538,7 +538,7 @@ button:disabled:hover {
 .header {
   background-color: #2d3e50;
   color: white;
-  padding: 1rem 2rem; /* Reduced the padding from 1.5rem to 1rem */
+  padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -550,8 +550,66 @@ button:disabled:hover {
 
 .header h1 {
   font-size: 1.8rem;
-  margin-right: 1rem; /* Added margin-right to adjust space between title and nav */
 }
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #28c3f2;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #2d3e50;
+    padding: 1rem 2rem;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    max-width: 300px;
+    transform: translateX(100%);
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
 
 .header nav {
   display: flex;
