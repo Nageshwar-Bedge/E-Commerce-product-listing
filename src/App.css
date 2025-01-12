@@ -503,8 +503,8 @@ button:disabled:hover {
 
 /* Product Card */
 .product-card {
-  background-color: #fff;
-  border: 2px solid #ddd; /* Border added */
+  background-color: #f6e4e4;
+  border: 2px solid #212020; /* Border added */
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -520,7 +520,7 @@ button:disabled:hover {
 
 .product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 12px rgba(36, 35, 35, 0.15);
   border-color: #161615; /* Highlight border on hover */
 }
 
@@ -534,81 +534,89 @@ button:disabled:hover {
 
 
 /* Header Styling */
-/* Header Styling */
+/* Base Styles */
 .header {
-  background-color: #2d3e50;
-  color: white;
-  padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  background: #2d3e50;
+  color: white;
 }
 
 .header h1 {
-  font-size: 1.8rem;
-}
-
-.menu-toggle {
-  background: none;
-  border: none;
-  color: white;
   font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .nav-links {
   display: flex;
   gap: 1rem;
-  align-items: center;
-  transition: transform 0.3s ease;
 }
 
 .nav-links a {
-  color: white;
   text-decoration: none;
-  font-weight: bold;
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .nav-links a:hover {
-  background-color: #28c3f2;
+  color: #ff6f61;
 }
 
-@media (max-width: 768px) {
+/* Menu Toggle Button Visible on Small Screens */
+.menu-toggle {
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Display the toggle button on small screens */
   .menu-toggle {
     display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
   }
 
+  /* Initially hide the nav items on small screens */
   .nav-links {
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #2d3e50;
-    padding: 1rem 2rem;
-    border-radius: 0 0 10px 10px;
+    top: 60px;  /* Adjust according to your header height */
+    left: 0;
     width: 100%;
-    max-width: 300px;
-    transform: translateX(100%);
-  }
-
-  .nav-links.open {
-    transform: translateX(0);
-  }
-
-  .nav-links a {
-    margin-bottom: 1rem;
-    text-align: center;
+    background: #2d3e50;
     padding: 1rem;
+    z-index: 100;
+  }
+
+  /* Show the nav items when the menu is open */
+  .nav-links.open {
+    display: flex;
   }
 }
+
+@media screen and (min-width: 769px) {
+  /* Show the navigation links on larger screens */
+  .nav-links {
+    display: flex;
+  }
+
+  /* Hide the toggle button on larger screens */
+  .menu-toggle {
+    display: none;
+  }
+}
+
+
 
 
 .header nav {
@@ -634,9 +642,3 @@ button:disabled:hover {
   font-size: 1.5rem; /* Increased icon size */
   margin-right: 0.5rem; /* Adjust space between icon and text */
 }
-
-
-
-
-
-
