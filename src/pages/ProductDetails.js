@@ -1,7 +1,7 @@
-//src/pages/ProductDetails.js
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchProductDetails } from "../api";
+import './ProductDetails.css'; // Import the CSS for styling
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -15,12 +15,25 @@ const ProductDetails = () => {
 
   return (
     <div className="product-details">
-      <img src={product.thumbnail} alt={product.title} />
-      <h1>{product.title}</h1>
-      <p>{product.description}</p>
-      <p>${product.price}</p>
-      <p>Rating: {product.rating}</p>
-      <p>Category: {product.category}</p>
+      <div className="product-image-container">
+        <img src={product.thumbnail} alt={product.title} className="full-size-image" />
+      </div>
+      <div className="product-info">
+        <h1 className="product-title">{product.title}</h1>
+        <p className="product-description">{product.description}</p>
+        <div className="product-price-rating">
+          <p className="product-price">
+            <strong>Price:</strong> ${product.price}
+          </p>
+          <p className="product-rating">
+            <strong>Rating:</strong> {product.rating} / 5
+          </p>
+        </div>
+        <p className="product-category">
+          <strong>Category:</strong> {product.category}
+        </p>
+        <button className="buy-now-btn">Buy Now</button>
+      </div>
     </div>
   );
 };
