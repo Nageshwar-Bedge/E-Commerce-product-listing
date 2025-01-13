@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { fetchProductDetails } from "../api";
-import './ProductDetails.css';
+
 
 const ProductDetails = () => {
   const { id } = useParams();
