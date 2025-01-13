@@ -7,7 +7,7 @@ const Header = ({ cartCount }) => {
 
   // Toggle the menu state
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen); // This toggles the menu visibility
+    setMenuOpen(!menuOpen);
   };
 
   return (

@@ -21,12 +21,13 @@
   height: auto;
   border-radius: 8px;
   object-fit: contain;
-  border: 2px solid #ddd;
+  border: 2px solid #161616;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-image-container:hover .full-size-image {
+  background-color: #f6e4e4;
   transform: scale(1.05); /* Zoom effect on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
 }

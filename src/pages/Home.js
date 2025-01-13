@@ -7,10 +7,29 @@ const Home = ({ addToCart }) => {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("");
   const [sort, setSort] = useState("");
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
     fetchProducts().then(setProducts);
   }, []);
+
+  useEffect(() => {
+    // Show "Return to Top" button when scrolled down
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const filteredProducts = products
     .filter((product) =>
@@ -26,17 +45,17 @@ const Home = ({ addToCart }) => {
       return 0;
     });
 
-  const categories = [ 
-    "fragrances", 
-    "furniture", 
+  const categories = [
+    "fragrances",
+    "furniture",
     "groceries",
     "beauty",
     "electronics",
     "clothing",
     "appliances",
-    "accessories"
-    
+    "accessories",
   ];
+
   return (
     <div>
       <div className="search-filter">
@@ -50,7 +69,9 @@ const Home = ({ addToCart }) => {
         <select onChange={(e) => setCategory(e.target.value)} className="category-dropdown">
           <option value="">All Categories</option>
           {categories.map((cat) => (
-            <option key={cat} value={cat}>{cat.charAt(0).toUpperCase() + cat.slice(1)}</option>
+            <option key={cat} value={cat}>
+              {cat.charAt(0).toUpperCase() + cat.slice(1)}
+            </option>
           ))}
         </select>
         <select onChange={(e) => setSort(e.target.value)} className="sort-dropdown">
@@ -73,6 +94,12 @@ const Home = ({ addToCart }) => {
           ))
         )}
       </div>
+      {showScrollTop && (
+  <button className="scroll-to-top" onClick={scrollToTop}>
+    <span className="scroll-to-top-icon">↑</span>
+  </button>
+)}
+
     </div>
   );
 };
