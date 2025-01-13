@@ -18,7 +18,7 @@ This is an e-commerce product listing application built with **React.js**, **HTM
 - **CSS** plain CSS for styling
 - **API**: DummyJSON
 - **Version Control**: Git for managing the project.
-- 
+ 
 ## Setup Instructions
 
 Follow the steps below to set up the project locally on your machine.
