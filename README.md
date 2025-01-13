@@ -1,6 +1,6 @@
 # E-Commerce Product List
 
-This is an e-commerce product listing application built with **React.js**, **HTML**, **CSS**, and **JavaScript**, **API's**. The project displays a list of products with their images, descriptions, prices, and an "Add to Cart" button. The project also has a responsive design to ensure a seamless user experience across various devices.
+This is an e-commerce product listing application built with **React.js**, **HTML**, **CSS**, and **JavaScript**, **API's (DummyJSON)**. The project displays a list of products with their images, descriptions, prices, and an "Add to Cart" button. The project also has a responsive design to ensure a seamless user experience across various devices.
 
 ## Features Implemented
 
@@ -13,6 +13,12 @@ This is an e-commerce product listing application built with **React.js**, **HTM
 - **Scroll to Top Button**: A button that allows users to scroll back to the top of the page with ease.
 - **Icons**: Various icons are used throughout the application to enhance the user interface and experience.
 
+## Technologies Used:
+- **ReactJS** for front-end
+- **CSS** plain CSS for styling
+- **API**: DummyJSON
+- **Version Control**: Git for managing the project.
+- 
 ## Setup Instructions
 
 Follow the steps below to set up the project locally on your machine.
