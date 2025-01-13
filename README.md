@@ -60,11 +60,11 @@ This will start the development server and automatically open the application in
 
 5. Explore the features:
 
-Browse through the product cards.
-Use the "Add to Cart" button to simulate adding products to the cart.
-Use the toggle menu for easier navigation on smaller screens (mobile/tablet).
-Scroll back to the top using the scroll-to-top button.
-The application is responsive and adapts to mobile, tablet, and desktop screen sizes.
+- Browse through the product cards.
+- Use the "Add to Cart" button to simulate adding products to the cart.
+- Use the toggle menu for easier navigation on smaller screens (mobile/tablet).
+- Scroll back to the top using the scroll-to-top button.
+- The application is responsive and adapts to mobile, tablet, and desktop screen sizes.
 
 ## Live Links
 
