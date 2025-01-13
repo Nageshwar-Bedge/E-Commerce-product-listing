@@ -48,7 +48,7 @@ Before getting started, ensure you have the following installed:
 3. Install dependencies: Run the following command to install the necessary dependencies for the React project:
    
    ```bash
-   npm install react-icons && npm install
+   npm install
 
 This command will install all the packages listed in package.json and set up the development environment.
 
