@@ -6,7 +6,6 @@ const CartPage = ({ cart, updateCart }) => {
     0
   );
 
-  // Check if cart is empty
   const isCartEmpty = cart.length === 0;
 
   return (

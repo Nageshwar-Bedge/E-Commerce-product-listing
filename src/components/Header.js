@@ -5,7 +5,6 @@ import { FaHome, FaShoppingCart, FaBars, FaTimes } from "react-icons/fa";
 const Header = ({ cartCount }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Toggle the menu state
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };

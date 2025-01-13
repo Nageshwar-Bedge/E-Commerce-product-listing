@@ -14,7 +14,6 @@ const Home = ({ addToCart }) => {
   }, []);
 
   useEffect(() => {
-    // Show "Return to Top" button when scrolled down
     const handleScroll = () => {
       if (window.scrollY > 300) {
         setShowScrollTop(true);

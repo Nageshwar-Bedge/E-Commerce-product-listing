@@ -12,7 +12,7 @@
 .product-image-container {
   flex: 1;
   margin-right: 20px;
-  position: relative; /* To position overlay or effects over the image */
+  position: relative;
 }
 
 .full-size-image {
@@ -28,8 +28,8 @@
 
 .product-image-container:hover .full-size-image {
   background-color: #f6e4e4;
-  transform: scale(1.05); /* Zoom effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .product-info {

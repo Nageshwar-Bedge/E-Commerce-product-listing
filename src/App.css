@@ -46,11 +46,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.6rem; /* Increased gap slightly */
-  padding: 1rem; /* Increased padding slightly */
+  gap: 1.6rem;
+  padding: 1rem;
   background: linear-gradient(135deg, #f1faff, #e2f4fc);
-  margin-top: 0.5rem; /* Increased top margin */
-  margin-bottom: 0.3rem; /* Added slight bottom margin */
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 1200px;
@@ -60,7 +60,7 @@ body {
 }
 
 .search-filter:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .search-filter input,
@@ -69,7 +69,7 @@ body {
   border-radius: 5px;
   border: 1px solid #ddd;
   font-size: 1.1rem;
-  width: 40%; /* Reduced width for better space usage */
+  width: 40%;
   background-color: #fafafa;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -79,7 +79,7 @@ body {
 .search-filter select:focus {
   border-color: #0c0d0d;
   outline: none;
-  background-color: #fff; /* Light background on focus */
+  background-color: #fff;
 }
 
 .search-filter button {
@@ -96,13 +96,13 @@ body {
 }
 
 .search-filter button:hover {
-  background-color: #2e94d0; /* Slightly darker blue on hover */
+  background-color: #2e94d0;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .search-filter input:focus,
 .search-filter select:focus {
-  border-color: #28c3f2; /* Blue border on focus */
+  border-color: #28c3f2;
 }
 
 @media (max-width: 768px) {
@@ -125,9 +125,9 @@ body {
 .product-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem; /* Increased gap slightly */
-  padding: 1rem; /* Increased padding slightly */
-  margin-top: 0.5rem; /* Increased top margin */
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -363,8 +363,8 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, #28c3f2, #191a1a); /* Defines the gradient colors */
-  color: transparent; /* Makes the text itself transparent, allowing the gradient to show through */
+  background: linear-gradient(90deg, #28c3f2, #191a1a);
+  color: transparent;
 }
 
 
@@ -565,10 +565,10 @@ button:disabled:hover {
 
 
 
-/* Product Card */
+/* Product Card CSS */
 .product-card {
   background-color: #eaf7ff;
-  border: 2px solid #212020; /* Border added */
+  border: 2px solid #212020;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -585,7 +585,7 @@ button:disabled:hover {
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(36, 35, 35, 0.15);
-  border-color: #161615; /* Highlight border on hover */
+  border-color: #161615;
 }
 
 
@@ -631,7 +631,6 @@ button:disabled:hover {
   color: #0c0b0b;
 }
 
-/* Menu Toggle Button Visible on Small Screens */
 .menu-toggle {
   display: none;
   background: none;
@@ -644,12 +643,10 @@ button:disabled:hover {
 
 /* Responsive Styles for Small Screens */
 @media screen and (max-width: 768px) {
-  /* Display the toggle button */
   .menu-toggle {
     display: block;
   }
 
-  /* Initially hide the nav items */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -662,20 +659,16 @@ button:disabled:hover {
     z-index: 5;
   }
 
-  /* Show the nav items when the menu is open */
   .nav-links.open {
     display: flex;
   }
 }
 
-/* Responsive Styles for Larger Screens */
 @media screen and (min-width: 769px) {
-  /* Always show navigation links */
   .nav-links {
     display: flex;
   }
 
-  /* Hide the toggle button */
   .menu-toggle {
     display: none;
   }
@@ -706,14 +699,14 @@ button:disabled:hover {
 
 
 
-/* Redesigned Scroll-to-Top Button (Right Side, Blue and Black Theme) */
+/* Redesigned Scroll-to-Top Button */
 .scroll-to-top {
   position: fixed;
   bottom: 20px;
-  right: 20px; /* Positioned to the right */
+  right: 20px; 
   width: 45px;
   height: 45px;
-  background: linear-gradient(135deg, #1e3a8a, #2563eb); /* Blue gradient */
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
   color: white;
   border: none;
   border-radius: 50%;
@@ -723,7 +716,7 @@ button:disabled:hover {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Dark shadow for contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   z-index: 1000;
   transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
   opacity: 0.85;
@@ -735,7 +728,6 @@ button:disabled:hover {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Subtle Pulsating Animation */
 .scroll-to-top::before {
   content: "";
   position: absolute;
@@ -764,7 +756,6 @@ button:disabled:hover {
   }
 }
 
-/* Bouncing Icon */
 .scroll-to-top-icon {
   font-size: 16px;
   animation: bounce 1.8s infinite;
