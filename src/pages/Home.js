@@ -48,11 +48,7 @@ const Home = ({ addToCart }) => {
     "fragrances",
     "furniture",
     "groceries",
-    "beauty",
-    "electronics",
-    "clothing",
-    "appliances",
-    "accessories",
+    "beauty"
   ];
 
   return (
