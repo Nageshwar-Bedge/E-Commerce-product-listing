@@ -14,8 +14,8 @@ This is an e-commerce product listing application built with **React.js**, **HTM
 - **Icons**: Various icons are used throughout the application to enhance the user interface and experience.
 
 ## Technologies Used:
-- **ReactJS** for front-end
-- **CSS** plain CSS for styling
+- **ReactJS**: for front-end
+- **CSS**: plain CSS for styling
 - **API**: DummyJSON
 - **Version Control**: Git for managing the project.
  
