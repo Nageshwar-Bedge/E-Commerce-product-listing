@@ -68,5 +68,5 @@ This will start the development server and automatically open the application in
 
 ## Live Links
 
-- [QED42 Assignment Link1](https://qed42.vercel.app/)
-- [QED42 Assignment Link2](https://qed42-nageshs-projects-30ec2385.vercel.app/)
+- [Deployment Link1](https://qed42.vercel.app/)
+- [Assignment Link2](https://github.com/Nageshwar-Bedge/E-Commerce-product-listing)
